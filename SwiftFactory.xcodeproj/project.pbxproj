@@ -8,8 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		3619DE841D75A4C30088D3FC /* SwiftFactory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3619DE7A1D75A4C30088D3FC /* SwiftFactory.framework */; };
-		3619DE891D75A4C30088D3FC /* SwiftFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3619DE881D75A4C30088D3FC /* SwiftFactoryTests.swift */; };
 		3619DE8B1D75A4C30088D3FC /* SwiftFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 3619DE7D1D75A4C30088D3FC /* SwiftFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3619DE971D75A5360088D3FC /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3619DE941D75A5360088D3FC /* Factory.swift */; };
+		3619DE981D75A5360088D3FC /* DependencyResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3619DE951D75A5360088D3FC /* DependencyResolver.swift */; };
+		3619DE991D75A5360088D3FC /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3619DE961D75A5360088D3FC /* Container.swift */; };
+		3619DE9D1D75A5770088D3FC /* TestContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3619DE9A1D75A5770088D3FC /* TestContainer.swift */; };
+		3619DE9E1D75A5770088D3FC /* TestDependencyResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3619DE9B1D75A5770088D3FC /* TestDependencyResolver.swift */; };
+		3619DE9F1D75A5770088D3FC /* TestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3619DE9C1D75A5770088D3FC /* TestFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,8 +32,13 @@
 		3619DE7D1D75A4C30088D3FC /* SwiftFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftFactory.h; sourceTree = "<group>"; };
 		3619DE7E1D75A4C30088D3FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3619DE831D75A4C30088D3FC /* SwiftFactoryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftFactoryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3619DE881D75A4C30088D3FC /* SwiftFactoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftFactoryTests.swift; sourceTree = "<group>"; };
 		3619DE8A1D75A4C30088D3FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3619DE941D75A5360088D3FC /* Factory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Factory.swift; sourceTree = "<group>"; };
+		3619DE951D75A5360088D3FC /* DependencyResolver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependencyResolver.swift; sourceTree = "<group>"; };
+		3619DE961D75A5360088D3FC /* Container.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Container.swift; sourceTree = "<group>"; };
+		3619DE9A1D75A5770088D3FC /* TestContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestContainer.swift; sourceTree = "<group>"; };
+		3619DE9B1D75A5770088D3FC /* TestDependencyResolver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestDependencyResolver.swift; sourceTree = "<group>"; };
+		3619DE9C1D75A5770088D3FC /* TestFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +81,9 @@
 		3619DE7C1D75A4C30088D3FC /* SwiftFactory */ = {
 			isa = PBXGroup;
 			children = (
+				3619DE941D75A5360088D3FC /* Factory.swift */,
+				3619DE951D75A5360088D3FC /* DependencyResolver.swift */,
+				3619DE961D75A5360088D3FC /* Container.swift */,
 				3619DE7D1D75A4C30088D3FC /* SwiftFactory.h */,
 				3619DE7E1D75A4C30088D3FC /* Info.plist */,
 			);
@@ -80,7 +93,9 @@
 		3619DE871D75A4C30088D3FC /* SwiftFactoryTests */ = {
 			isa = PBXGroup;
 			children = (
-				3619DE881D75A4C30088D3FC /* SwiftFactoryTests.swift */,
+				3619DE9A1D75A5770088D3FC /* TestContainer.swift */,
+				3619DE9B1D75A5770088D3FC /* TestDependencyResolver.swift */,
+				3619DE9C1D75A5770088D3FC /* TestFactory.swift */,
 				3619DE8A1D75A4C30088D3FC /* Info.plist */,
 			);
 			path = SwiftFactoryTests;
@@ -149,6 +164,7 @@
 					3619DE791D75A4C30088D3FC = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = QL9Q47DN4Y;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					3619DE821D75A4C30088D3FC = {
@@ -198,6 +214,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3619DE981D75A5360088D3FC /* DependencyResolver.swift in Sources */,
+				3619DE991D75A5360088D3FC /* Container.swift in Sources */,
+				3619DE971D75A5360088D3FC /* Factory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,7 +224,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3619DE891D75A4C30088D3FC /* SwiftFactoryTests.swift in Sources */,
+				3619DE9F1D75A5770088D3FC /* TestFactory.swift in Sources */,
+				3619DE9E1D75A5770088D3FC /* TestDependencyResolver.swift in Sources */,
+				3619DE9D1D75A5770088D3FC /* TestContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +343,7 @@
 		3619DE8F1D75A4C30088D3FC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = QL9Q47DN4Y;
@@ -334,6 +356,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.banhtieu.SwiftFactory;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -341,6 +364,7 @@
 		3619DE901D75A4C30088D3FC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = QL9Q47DN4Y;
@@ -360,6 +384,7 @@
 		3619DE921D75A4C30088D3FC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = QL9Q47DN4Y;
 				INFOPLIST_FILE = SwiftFactoryTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -372,6 +397,7 @@
 		3619DE931D75A4C30088D3FC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = QL9Q47DN4Y;
 				INFOPLIST_FILE = SwiftFactoryTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
