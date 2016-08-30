@@ -15,6 +15,8 @@
 		3619DE9D1D75A5770088D3FC /* TestContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3619DE9A1D75A5770088D3FC /* TestContainer.swift */; };
 		3619DE9E1D75A5770088D3FC /* TestDependencyResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3619DE9B1D75A5770088D3FC /* TestDependencyResolver.swift */; };
 		3619DE9F1D75A5770088D3FC /* TestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3619DE9C1D75A5770088D3FC /* TestFactory.swift */; };
+		3619DEA11D75A6650088D3FC /* SwiftFactory.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 3619DEA01D75A6650088D3FC /* SwiftFactory.podspec */; };
+		3619DEA31D75A6E70088D3FC /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 3619DEA21D75A6E70088D3FC /* LICENSE */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +41,8 @@
 		3619DE9A1D75A5770088D3FC /* TestContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestContainer.swift; sourceTree = "<group>"; };
 		3619DE9B1D75A5770088D3FC /* TestDependencyResolver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestDependencyResolver.swift; sourceTree = "<group>"; };
 		3619DE9C1D75A5770088D3FC /* TestFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestFactory.swift; sourceTree = "<group>"; };
+		3619DEA01D75A6650088D3FC /* SwiftFactory.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SwiftFactory.podspec; sourceTree = "<group>"; };
+		3619DEA21D75A6E70088D3FC /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 				3619DE7C1D75A4C30088D3FC /* SwiftFactory */,
 				3619DE871D75A4C30088D3FC /* SwiftFactoryTests */,
 				3619DE7B1D75A4C30088D3FC /* Products */,
+				3619DEA01D75A6650088D3FC /* SwiftFactory.podspec */,
+				3619DEA21D75A6E70088D3FC /* LICENSE */,
 			);
 			sourceTree = "<group>";
 		};
@@ -204,6 +210,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3619DEA31D75A6E70088D3FC /* LICENSE in Resources */,
+				3619DEA11D75A6650088D3FC /* SwiftFactory.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
